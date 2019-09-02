@@ -6,6 +6,12 @@
 #include <arpa/inet.h>
 #include "hacking.h"
 
+/*
+build: gcc simple_server.c -o simple_server
+
+run: ./simple_server
+*/
+
 #define PORT 7890
 
 const int BUFFER_SIZE = 1024;
