@@ -1,5 +1,26 @@
 #include <libnet.h>
 
+/*
+    This program requires libnet-1.0 version
+
+    source can be downloaded from https://packetstormsecurity.com/files/download/22174/libnet-1.0.1b.tar.gz
+
+    tar -xvf libnet-1.0.1b.tar.gz
+    cd Libnet-1.0.1b
+    ./configure
+    make
+
+    change Makefile
+    put
+
+    MAN_PREFIX  =   /usr/share/doc/
+
+    sudo make install
+
+    build:
+        gcc $(libnet-config --defines) -o synflood synflood.c -lnet
+*/
+
 #define FLOOD_DELAY 5000 // delay between packet injects by 5000 ms
 
 /* returns an IP in x.x.x.x notation */
